@@ -9,7 +9,6 @@ description = "Privacy-first local pipeline for mobile photo and document organi
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
-authors = [{name = "remixazkA"}]
 dependencies = [
   "Pillow>=10.4",
   "pypdf>=5.0",

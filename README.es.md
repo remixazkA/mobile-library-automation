@@ -8,9 +8,11 @@ El proyecto nació al cambiar de móvil. Durante la migración aparecieron miles
 
 ## Autoría y método de trabajo
 
-Este es un proyecto abiertamente asistido por IA. El responsable del proyecto identificó el problema real, explicó el resultado que necesitaba, estableció los límites de privacidad y seguridad, revisó los resultados y pidió utilizar el menor número de tokens de modelo posible. Codex, un agente de programación con IA, produjo la implementación y la documentación siguiendo esa orientación.
+Este es un proyecto abiertamente asistido por IA. El responsable del proyecto identificó el problema real, describió el resultado que necesitaba, revisó las entregas, solicitó ajustes y pidió utilizar el menor número de tokens de modelo posible.
 
-El repositorio demuestra capacidad para definir problemas, delegar con claridad en un sistema de IA, establecer restricciones, validar iterativamente y entregar de forma responsable. No afirma que el responsable diseñara o escribiera personalmente cada línea de código.
+Codex, un agente de programación con IA, diseñó y generó la implementación, la arquitectura técnica, los mecanismos de seguridad, las pruebas y la documentación. El responsable del proyecto no diseñó ni escribió el código fuente.
+
+La contribución del responsable fue definir el problema y el resultado esperado, orientar al agente de IA, revisar los resultados comunicados, solicitar ajustes y coordinar una publicación responsable. Las capacidades técnicas descritas a continuación pertenecen a la solución producida por Codex; no se presentan como competencias personales de programación o aprendizaje automático del responsable.
 
 [English README](README.md)
 
@@ -28,7 +30,7 @@ El repositorio demuestra capacidad para definir problemas, delegar con claridad 
 
 La cobertura indica que todos los elementos inventariados recibieron un resultado. No implica una precisión del 100 %: los modelos zero-shot necesitan validación humana sobre una muestra etiquetada.
 
-## Capacidades demostradas
+## Qué contiene la solución
 
 - Automatización integral con Windows MTP, Python y PowerShell.
 - Inventario incremental en SQLite para no recalcular archivos sin cambios.
@@ -58,6 +60,12 @@ mobile-library score-photos ./photos --config config.example.toml --output ./run
 ```
 
 La primera ejecución descarga los pesos de OpenCLIP, pero las imágenes permanecen en el equipo.
+
+## Alcance técnico
+
+Este repositorio público es una implementación de referencia saneada de las partes reutilizables y críticas para la seguridad. No reproduce íntegramente el pipeline privado utilizado durante la ejecución real.
+
+La implementación pública utiliza Python, PowerShell, SQLite, Pillow, pypdf, OpenCLIP, PyTorch y Windows Shell.Application/MTP. La ejecución privada también utilizó OpenCV, NudeNet, YuNet, SFace y DBSCAN; esos componentes se documentan en el caso de estudio, pero no están implementados en este código público.
 
 ## Principios de seguridad
 

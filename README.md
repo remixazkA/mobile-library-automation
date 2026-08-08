@@ -8,9 +8,11 @@ This project started after a phone migration exposed two problems at once: thous
 
 ## Authorship and working method
 
-This is an openly AI-assisted project. The project owner identified the real-world problem, explained the desired outcome, defined the privacy and safety constraints, reviewed the results and asked that the work use as few model tokens as practical. Codex, an AI coding agent, produced the implementation and documentation under that direction.
+This is an openly AI-assisted project. The project owner identified the real-world problem, described the desired outcome, reviewed the deliverables, requested adjustments and asked that the work use as few model tokens as practical.
 
-The repository therefore demonstrates problem framing, clear delegation to an AI system, constraint setting, iterative validation and responsible delivery. It does not claim that the project owner personally designed or wrote every line of code.
+Codex, an AI coding agent, designed and generated the software implementation, technical architecture, safety mechanisms, tests and documentation. The project owner did not design or write the source code.
+
+The owner's contribution was problem framing, outcome definition, direction of the AI agent, review of the reported results, requests for adjustments and responsible publication. The technical capabilities below describe the solution produced by Codex; they are not presented as the owner's personal programming or machine-learning competencies.
 
 [Read this page in Spanish](README.es.md)
 
@@ -28,7 +30,7 @@ The repository therefore demonstrates problem framing, clear delegation to an AI
 
 Processing coverage means that every inventoried item received a result. It is not a claim of 100% classification accuracy; zero-shot scores require human evaluation on a labelled sample.
 
-## What it demonstrates
+## What the solution contains
 
 - End-to-end automation across Windows MTP, Python and PowerShell.
 - Incremental inventory in SQLite so unchanged files are not recomputed.
@@ -56,6 +58,8 @@ flowchart LR
 ```
 
 ## Public repository scope
+
+This public repository is a sanitized reference implementation of the reusable and safety-critical parts of the project. It is not the complete private production pipeline.
 
 The reusable public implementation includes:
 
@@ -104,7 +108,9 @@ See [Privacy and publication boundaries](docs/PRIVACY.md) and the full [case stu
 
 ## Technology
 
-Python, PowerShell, SQLite, Pillow, pypdf, OpenCLIP, PyTorch, OpenCV, YuNet, SFace, DBSCAN and Windows Shell.Application/MTP.
+The public reference implementation uses Python, PowerShell, SQLite, Pillow, pypdf, OpenCLIP, PyTorch and Windows Shell.Application/MTP.
+
+The private production run additionally used OpenCV, NudeNet, YuNet, SFace and DBSCAN. Those components are documented in the case study but are not implemented in this public codebase.
 
 ## License
 
