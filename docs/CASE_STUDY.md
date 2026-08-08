@@ -2,7 +2,9 @@
 
 ## Roles and authorship
 
-The project owner supplied the problem context, goals, examples, priorities and constraints, including local-only processing, conservative deletion and minimal token consumption. Codex generated and iterated on the code and technical documentation under that guidance. The outcome is presented as an AI-directed automation project, not as a claim of unaided software authorship.
+The project owner supplied the problem context, desired outcome, examples and priorities, reviewed the deliverables, requested adjustments and asked for minimal model-token consumption. Codex translated that direction into technical requirements, designed the architecture and safety mechanisms, and generated the code, tests and technical documentation.
+
+The project owner did not design or write the source code. The outcome is presented as an AI-directed automation project: the owner's contribution was problem framing, direction, review, requests for adjustments and publication, not software-engineering or machine-learning authorship.
 
 ## Context
 
@@ -11,6 +13,8 @@ A recent phone replacement turned a routine migration into a data-quality proble
 The project treated both collections as one information-management problem: acquire safely, build a durable inventory, extract evidence, propose classifications, apply only reviewed changes and verify the final state.
 
 ## Constraints
+
+The resulting technical design followed these constraints. They describe the solution implemented by Codex and are not attributed to the project owner as personally designed technical requirements.
 
 - The phone exposed storage through Windows MTP rather than a normal filesystem.
 - Personal photos and documents could not be sent to a cloud classification service.
