@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mobile-library-automation"
+version = "0.1.0"
+description = "Privacy-first local pipeline for mobile photo and document organization"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "remixazkA"}]
+dependencies = [
+  "Pillow>=10.4",
+  "pypdf>=5.0",
+]
+
+[project.optional-dependencies]
+ml = [
+  "numpy>=2.0",
+  "open-clip-torch>=2.26",
+  "torch>=2.4",
+]
+
+[project.scripts]
+mobile-library = "mobile_library_automation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

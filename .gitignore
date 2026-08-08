@@ -1,0 +1,47 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Private runtime data
+data/
+input/
+staging/
+run/
+output/
+classified/
+quarantine/
+backups/
+logs/
+models/
+thumbnails/
+*.sqlite
+*.sqlite-*
+*.db
+*.onnx
+*.pt
+*.pth
+*.bin
+*manifest*.json
+*inventory*.csv
+*inventory*.tsv
+*scores*.json
+*.log
+
+# Local configuration may contain paths or device names
+config.toml
+.env
+.env.*
+!.env.example
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

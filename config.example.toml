@@ -1,0 +1,22 @@
+[inventory]
+image_extensions = [".jpg", ".jpeg", ".png", ".webp", ".bmp", ".tif", ".tiff"]
+document_extensions = [".pdf", ".docx", ".xlsx", ".txt", ".md"]
+
+[documents.categories]
+geography = ["geography", "climate", "population", "urban", "landscape", "geografia", "clima", "poblacion"]
+history = ["history", "ancient", "medieval", "archaeology", "historia", "antigua", "medieval", "arqueologia"]
+reference = ["guide", "manual", "calendar", "instructions", "guia", "manual", "calendario", "instrucciones"]
+
+[photos]
+model = "ViT-B-32"
+pretrained = "laion2b_s34b_b79k"
+batch_size_cpu = 16
+batch_size_cuda = 96
+logit_scale = 35.0
+
+[photos.prompts]
+pets = ["a photo of a pet", "a cat or dog indoors"]
+travel = ["a vacation travel photo", "a tourist landmark", "a scenic landscape"]
+screenshots = ["a phone screenshot", "a messaging app meme", "a document scan"]
+people = ["a personal portrait", "a group photo of people"]
+other = ["an ordinary personal photograph", "a photo of food or an object"]
